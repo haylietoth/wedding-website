@@ -11,7 +11,6 @@ const app = require('./config');
 const Cookies = require('cookies');
 const PrismicConfig = require('./prismic-configuration');
 const PORT = app.get('port');
-
 app.listen(PORT, () => {
   process.stdout.write(`Point your browser to: http://localhost:${PORT}\n`);
 });
@@ -50,25 +49,6 @@ app.route('*').get((req, res, next) => {
 /*
  * -------------- Routes --------------
  */
-
-/*
- * Preconfigured prismic preview
- */
-app.get('/preview', (req, res) => {
-  const token = req.query.token;
-  if (token) {
-    req.prismic.api.previewSession(token, PrismicConfig.linkResolver, '/')
-    .then((url) => {
-      const cookies = new Cookies(req, res);
-      cookies.set(Prismic.previewCookie, token, { maxAge: 30 * 60 * 1000, path: '/', httpOnly: false });
-      res.redirect(302, url);
-    }).catch((err) => {
-      res.status(500).send(`Error 500 in preview: ${err.message}`);
-    });
-  } else {
-    res.send(400, 'Missing token from querystring');
-  }
-});
 
 /*
  * Page route
