@@ -12,12 +12,11 @@ block prepend body
     section.content-section(class=sectionClass)
        h2
         != PrismicDOM.RichText.asText(project.title)+ " "
-        i.material-icons(style="font-size:3vmin;vertical-align:text-top;") arrow_downward
        //- Display the slices
        for slice in pageContent.data.page_content
          case slice.slice_type
-           when 'full_width_image'
-             include ./partials/full-width-image.pug
+           when 'photos_page_image'
+             include ./partials/photos_page_image.pug
            when 'text-section'
              include ./partials/text-section.pug
        h3
@@ -26,6 +25,5 @@ block prepend body
           != PrismicDOM.RichText.asText(project.collab)
        h3
           != PrismicDOM.RichText.asText(project.type) + " "
-          i.material-icons(style="font-size:20px;vertical-align:sub;") arrow_forward 
           != PrismicDOM.RichText.asText(project.year)
   include ./partials/footer.pug

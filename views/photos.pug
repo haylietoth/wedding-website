@@ -1,0 +1,13 @@
+extends ./layout.pug
+
+block prepend body
+  body(data-wio-id=pageContent.id)
+  include ./partials/header.pug
+    
+  // Content Section
+  div.container
+   for slice in pageContent.data.page_content
+    case slice.slice_type
+     when 'photo'
+      include ./partials/full-width-image.pug
+  include ./partials/footer.pug

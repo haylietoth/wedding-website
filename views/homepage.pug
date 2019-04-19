@@ -7,13 +7,8 @@ block prepend body
     
     // Content Section
     div.container
-     div.thumbails.clear(id='index')
-      //- Display the slices
-      for slice in pageContent.data.page_content
-        case slice.slice_type
-          when 'thumbnail'
-            include ./partials/full-width-image.pug
-     include ./partials/footer.pug
+     img(src=pageContent.data.home_image.url)
+    include ./partials/footer.pug
 
 
 

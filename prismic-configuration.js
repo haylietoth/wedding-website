@@ -1,7 +1,6 @@
 module.exports = {
 
   apiEndpoint: 'https://wedding-website.prismic.io/api/v2',
-
   // -- Access token if the Master is not open
   // accessToken: 'xxxxxx',
 
@@ -14,6 +13,9 @@ module.exports = {
   // As your project grows, you should update this function according to your routes
   linkResolver: function(doc, ctx) {
     if (doc.type == 'page') {
+        return '/' + doc.uid;
+    }
+    if (doc.type == 'photos') {
         return '/' + doc.uid;
     }
     return '/';
