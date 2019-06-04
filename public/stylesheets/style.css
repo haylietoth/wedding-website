@@ -440,6 +440,10 @@ img {
     }
     /*Header*/
     
+    .img {
+        margin: 100px;
+    }
+    
     /*Registry*/
     .registry p {
         padding: 0;
