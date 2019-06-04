@@ -538,6 +538,9 @@ img {
     .row {
         padding: 0px;
     }
+    .links a {
+        margin: 10px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1025px) { 
