@@ -1,7 +1,7 @@
 .registry
   != PrismicDOM.RichText.asHtml(slice.primary.statement, ctx.linkResolver)
 .links
-  button.r-links(onclick='window.location.href = '+"'"+PrismicDOM.RichText.asText(slice.primary.west_elm_link, ctx.linkResolver)+"';" target='_blank')
+  a.r-links(href=PrismicDOM.RichText.asText(slice.primary.west_elm_link))
    | west elm
   br
   a.r-links(href=PrismicDOM.RichText.asText(slice.primary.zola_link, ctx.linkResolver))
