@@ -6,24 +6,21 @@ block prepend body
   include ./partials/header.pug
 
   // Content Section
-  - var project = pageContent.data.project_info[0]
   div.container
    div.project(style="display: block;")
     section.content-section(class=sectionClass)
-       h2
-        != PrismicDOM.RichText.asText(project.title)+ " "
-       //- Display the slices
        for slice in pageContent.data.page_content
          case slice.slice_type
+           when 'the_day'
+            include ./partials/the_day.pug
+           when 'the_day_no_h1'
+            include ./partials/the_day_no_h1.pug
+           when 'travel'
+            include ./partials/travel.pug
+           when 'q_a'
+             include ./partials/q_a.pug
            when 'photos_page_image'
              include ./partials/photos_page_image.pug
-           when 'text-section'
-             include ./partials/text-section.pug
-       h3
-          != PrismicDOM.RichText.asText(project.client)
-       h3
-          != PrismicDOM.RichText.asText(project.collab)
-       h3
-          != PrismicDOM.RichText.asText(project.type) + " "
-          != PrismicDOM.RichText.asText(project.year)
+           when 'registry'
+             include ./partials/registry.pug
   include ./partials/footer.pug

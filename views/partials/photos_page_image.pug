@@ -1,2 +1,8 @@
 section.photos_page_image
-  img(src=slice.primary.image.url)
+ .row
+  .column-img
+   each imageItem in slice.items
+     img(src=imageItem.image_left.url)
+  .column-img
+   each imageItem in slice.items
+     img(src=imageItem.image_right.url)

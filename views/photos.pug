@@ -5,7 +5,7 @@ block prepend body
   include ./partials/header.pug
     
   // Content Section
-  div.container
+  div.container.photos
    for slice in pageContent.data.page_content
     case slice.slice_type
      when 'photo'

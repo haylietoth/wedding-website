@@ -1,0 +1,31 @@
+.the-day
+ != PrismicDOM.RichText.asHtml(slice.primary.date, ctx.linkResolver)
+ .vertical-divider(style="padding-top: 75px;")
+  .column-d.first
+   .heading
+    != PrismicDOM.RichText.asHtml(slice.primary.event, ctx.linkResolver)
+    != PrismicDOM.RichText.asHtml(slice.primary.time, ctx.linkResolver)
+   != PrismicDOM.RichText.asHtml(slice.primary.description, ctx.linkResolver)
+   img(src=slice.primary.image.url)
+  .column-d.second
+    != PrismicDOM.RichText.asHtml(slice.primary.address_name, ctx.linkResolver)
+    != PrismicDOM.RichText.asHtml(slice.primary.address_street, ctx.linkResolver)
+    != PrismicDOM.RichText.asHtml(slice.primary.address_location, ctx.linkResolver)
+    div
+     button.location(onclick='window.location.href = '+"'"+PrismicDOM.RichText.asText(slice.primary.map, ctx.linkResolver)+"';" target='_blank')
+      | map
+     div.addeventatc(style='color: white !important;')
+      | add to calender
+      span.start 
+       != PrismicDOM.RichText.asText(slice.primary.calendar_start, ctx.linkResolver)
+      span.end
+       != PrismicDOM.RichText.asText(slice.primary.calendar_end, ctx.linkResolver)
+      span.timezone
+       != PrismicDOM.RichText.asText(slice.primary.calendar_timezone, ctx.linkResolver)
+      span.title 
+       != PrismicDOM.RichText.asText(slice.primary.calendar_title, ctx.linkResolver)
+      span.description
+       != PrismicDOM.RichText.asText(slice.primary.calendar_description, ctx.linkResolver)
+      span.location
+       != PrismicDOM.RichText.asText(slice.primary.calendar_location, ctx.linkResolver)
+    

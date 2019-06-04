@@ -1,0 +1,16 @@
+.travel
+ .vertical-divider
+  .column-t.one
+   p
+    img(src=slice.primary.icon.url)
+   p.title
+    != PrismicDOM.RichText.asText(slice.primary.title, ctx.linkResolver)
+   p.desc
+    != PrismicDOM.RichText.asText(slice.primary.description, ctx.linkResolver)
+  .column-t.two
+   p
+    img(src=slice.primary.icon2.url)
+   p.title
+    != PrismicDOM.RichText.asText(slice.primary.title2, ctx.linkResolver)
+   p.desc
+    != PrismicDOM.RichText.asText(slice.primary.description2, ctx.linkResolver)

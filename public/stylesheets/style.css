@@ -7,16 +7,7 @@
    font-family: Georgia;
     /*League Script Thin*/
    box-sizing: border-box;
-}
-
-html {
-    cursor: url(../images/wedding_dot_blue.png), auto;
-}
-
-html a:hover {
-   cursor: url(../images/wedding_dot_blue.png), auto;
-    
-}
+}ss
 
 .script {
     font-family: League Script Thin;
@@ -29,7 +20,7 @@ body {
     display:none;
     background:white;
 	color: #2780d7;
-	font-family: 'NeuzeitSLTStd-Book' , sans-serif;
+	font-family: Georgia;
 	line-height: 1.6;
     min-height: 100vh;
     opacity: 1;
@@ -38,20 +29,15 @@ body {
 	transition: background 500ms ease;
 }
 
-a {
-  cursor: url(../images/wedding_dot_blue.png), auto;
-}
-
-a:hover {
-  cursor: url(../images/wedding_dot_blue.png), auto;
-}
-
 h1 {
-  font-size: 42px; 
+  font-size: 30px; 
   font-weight: normal; 
-  color: black; 
+  color: #2780d7; 
   letter-spacing : 1.14;
   margin-bottom: 1rem;
+  margin-top: 70px;
+  text-align: center;
+  font-family: League Script Thin;
 }
 
 h2, h2 a {
@@ -64,8 +50,7 @@ h2, h2 a {
 }
 
 h3, h3 a {
-  Color:  black;
-  font-size: 18px;
+  color:  #2780d7;
   font-weight: 400;
   letter-spacing : 0.52;
   line-height: 34px;
@@ -76,39 +61,10 @@ img {
   width: 100%;
 }
 
-header {
-  margin: auto;
-}
-
 .project {
-	min-height: 100%;
-	padding-left: 10%;
-	padding-right: 10%;
     background-color: white;
 	background-size: contain;
     margin: auto;
-}
-
-/* Create two equal columns that floats next to each other */
-
-.column {
-  float: left;
-  padding-right: 188px;
-}
-
-.column h1 {
-    font-size: 28px;
-}
-
-.column h2 {
-    font-size: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .home-content-section {
@@ -133,28 +89,35 @@ header {
   margin-bottom: 5em;
 }
 
+.container { 
+    margin-top: 52px;
+}
+
 /* Header */
 .site-header {
-  height: 67px;
-  padding: 20px 50px;
+  height: 80px;
+  padding: 20px 50px 20px 18px;
 }
+
 .site-header,
 .site-header a {
   color: #2780d7;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
     
 }
 
-/*.site-header a:hover {
-    line-height: 3.6vmin;
-}*/
+.site-header a:hover, .site-header a:active, .links a:hover {
+    text-decoration: underline;
+}
 
 .site-header nav {
   text-align: center;
+  margin: 10px 0px;
 }
 .site-header nav ul {
   margin: 0;
+  padding-left: 0px;
 }
 .site-header nav li {
   display: inline-block;
@@ -167,7 +130,7 @@ header {
     left: 0;
     right: 0;
     top: 0;
-    height:67px;
+    height: 80px;
     z-index: 100;
 }
 
@@ -179,6 +142,7 @@ header {
 
 .signature {
     width: 100%;
+    margin-top: 150px;
 }
 
 .signature div {
@@ -191,9 +155,246 @@ header {
     font-size: 3vmin;
 }
 
-/*photo page*/
-.photos_page_image {
-  margin-bottom: 10%;  
+/*Travel Page*/
+.travel img {
+    width: auto;
+}
+
+.travel .title {
+    font-family: League Script Thin;
+    font-size: 25px;
+    padding: 0px 12%;
+}
+
+.travel .desc {
+    font-size: 20px;
+    padding: 0px 15%;
+}
+
+.container .one.column-t { 
+    width: 45%; 
+}
+
+.container .two.column-t { 
+    width: 45%; 
+}
+
+.container .one.column-t p,
+.container .two.column-t p {
+    text-align: center;
+}
+
+
+/*q&a page*/
+.vertical-divider{
+	clear: both;
+	position: relative;
+}
+
+.vertical-divider:after {
+	clear: both;
+	content: " ";
+	display: block;
+	visibility: hidden;
+    margin: 0px 75px;
+}
+
+.vertical-divider .column:not(:first-child):after, .vertical-divider .column-d:not(:first-child):after, .vertical-divider .column-t:not(:first-child):after {
+	background: #2780d7;
+	bottom: -41px;
+	content: " ";
+	margin-left: -10px;
+	position: absolute;
+	top: 23px;
+	width: 3px;
+}
+
+.vertical-divider .column-d:first-child:after{
+	background: black;
+    top: 75px;
+	content: " ";
+	margin-left: 16px;
+	position: absolute;
+    background-color: #2780d7;
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.container .column, .column-d, .column-t { 
+    float: left; 
+    display: inline; 
+    margin-left: 27px; 
+    margin-right: 10px; 
+    margin-top: 52px;
+}
+
+.container .first-half.column { 
+    width: 45%; 
+}
+
+.container .second-half.column { 
+    width: 45%; 
+}
+
+.container .first-half.column p{ 
+    font-family: League Script Thin;
+    font-size: 25px;
+    text-align: center;
+    padding: 0% 10% 10% 10%;
+}
+
+.container .second-half.column p{ 
+    font-size: 20px;
+    text-align: center;
+    padding: 0% 10% 10% 10%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*the day page*/
+.container .first.column-d { 
+    width: 45%;
+    margin-top: -25px;
+}
+
+.container .second.column-d { 
+    width: 45%; 
+    margin-top: 25px;
+}
+
+.container .first.column-d .heading{ 
+    clear: both;
+    margin: 0px 27% 0px 27%;
+}
+
+.container .first.column-d h2{ 
+    font-size: 25px;
+    font-family: League Script Thin;
+    float: left;
+}
+.container .first.column-d h3{ 
+    font-size: 25px;
+    float: right;
+}
+
+.container .first.column-d p{ 
+    font-size: 20px;
+    text-align: center;
+    padding: 14% 12% 1% 12%;
+}
+
+.container .first.column-d img{ 
+    padding: 0px 20%;
+}
+
+.container .second.column-d p, .container .second.column-d div{ 
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.location, .addeventatc {
+  background-color: #2780d7 !important;
+  border: none !important;
+  color: white!important;
+  text-align: center!important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  font-size: 14px !important;
+  height: 70px !important;
+  width: 70px !important;
+    margin: 20px 30px !important;
+  border-radius: 50% !important;
+  font-family: Georgia !important;
+  font-weight: normal !important;
+  line-height: normal !important;
+  z-index: 0 !important;
+}
+
+.location:hover {
+    cursor: pointer;
+}
+
+.addeventatc {
+    top: 4px;
+    padding: 15px 0 0 0 !important;
+}
+
+.addeventatc .addeventatc_icon {
+    background: none !important;
+}
+
+.location p {
+   white-space: normal; 
+}
+
+/*Photos page*/
+
+.photos_page_image img {
+    /*padding: 5% 10%;*/
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 15%;    
+}
+
+.column-img {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+.column-img img {
+  margin-top: 25px;
+  vertical-align: middle;
+}
+/*Registry Page*/
+
+.registry p{ 
+    font-family: League Script Thin;
+    font-size: 25px;
+    text-align: center;
+    padding: 5% 20%;
+}
+
+.links {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #2780d7;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    height: 110px;
+    width: 110px;
+    margin: 20px 50px;
+    border-radius: 50%;
+    padding: 30px 0px;
+}
+
+.links a:hover {
+    text-decoration: none;
+    color: #2780d7;
+    background-color: white;
 }
 
 /* Text Sections */
@@ -216,14 +417,150 @@ header {
 }
 
 /* Media Queries */
-@media screen and (min-width: 767px) { 
+@media screen and (max-width: 320px) { 
+    /*Header*/
+    .site-header nav li {
+        margin-left: 18px;
+    }
+    /*Header*/
+}
+@media screen and (max-width: 450px) { 
+    /*Header*/
+    .site-header {
+        padding: 5px 50px 20px 0px;
+    }
+    .site-header a {
+        font-size: 20px;
+    }
+    .site-header nav li {
+        margin-bottom: 8px;
+    }
+    .whitebar {
+        height: 105px;
+    }
+    /*Header*/
+    
+    /*Registry*/
+    .registry p {
+        padding: 0;
+    }
+    /*Registry*/
+    
+    /*Travel*/
+    .travel .desc, .travel .title {
+        padding: 0px 0px;
+    }
+    /*Travel*/
+} 
 
+@media screen and (max-width: 767px) { 
+    /*The Day*/
+    h1 {
+        font-size: 25px;
+        padding: 0 10px;
+    }
+    .container .second.column-d, .container .first.column-d  {
+        width: 100%;
+    }
+    .heading {
+        margin: 0px;
+        text-align: center;
+    }
+    
+    .container .first.column-d h2, .container .first.column-d h3 {
+        float: none;
+    }
+    
+    .container .first.column-d p {
+        padding: 0px;
+    }
+    /*The Day*/
+    
+    /*Columns*/
+    .vertical-divider {
+        padding-top: 10px;
+    }
+    .vertical-divider .column-d:first-child:after, .vertical-divider .column:not(:first-child):after, .vertical-divider .column-d:not(:first-child):after, .vertical-divider .column-t:not(:first-child):after {
+        background: none;
+    }
+    
+    .vertical-divider .column:first-child:after{
+        top: 100%;
+	    content: " ";
+	    margin-left: 45%;
+        position: absolute;
+        background-color: #2780d7;
+        border: none;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+   }
+    .container .second-half.column, .container .first-half.column,
+    .container .one.column-t, .container .two.column-t {
+        width: 100%;
+    }
+    .first-half.column p {
+        padding: 10% 10% 0 !important;
+    }
+    .second-half.column p {
+        padding: 0 10% 5% !important;
+    }
+    .container .column, .column-d {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /*Columns*/
 } 
 
 @media screen and (max-width: 768px) { 
+/*The Day*/
+    .container .first.column-d .heading {
+        margin: 0px 7% 0px 7%;
+    } 
+    
+    h2 {
+        line-height: 6.4vmin;
+    } 
+    
+    .container .first.column-d p {
+        padding: 20% 9% 1% 9%;
+    }
+    .container .one.column-t, .container .two.column-t {
+        margin: 0px;
+    }
+    
+    .column-img {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+    .row {
+        padding: 0px;
+    }
+}
 
-} 
+@media screen and (min-width: 769px) and (max-width: 1025px) { 
+    /*The Day*/
+    .container .first.column-d .heading {
+        margin: 0px 18% 0px 18%;
+    }
+    
+    .container .first.column-d p {
+        padding: 19% 12% 1% 12%;
+    }
 
-@media screen and (max-width: 1024px) { 
+    h2 {
+        line-height: 5.4vmin;
+    }
 
-} 
+    .container .first-column-d h2, .container .first-column-d h3, {
+        margin: 0;
+    }
+    
+    .column-img {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

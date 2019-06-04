@@ -1,0 +1,5 @@
+.vertical-divider
+  .column.first-half.script
+   != PrismicDOM.RichText.asHtml(slice.primary.question, ctx.linkResolver)
+  .column.second-half
+   != PrismicDOM.RichText.asHtml(slice.primary.answer, ctx.linkResolver)
