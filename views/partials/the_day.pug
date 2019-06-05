@@ -12,7 +12,7 @@
     != PrismicDOM.RichText.asHtml(slice.primary.address_street, ctx.linkResolver)
     != PrismicDOM.RichText.asHtml(slice.primary.address_location, ctx.linkResolver)
     div
-     button.location(onclick='window.location.href = '+"'"+PrismicDOM.RichText.asText(slice.primary.map, ctx.linkResolver)+"';" target='_blank')
+     button.location(onclick='window.open( '+"'"+PrismicDOM.RichText.asText(slice.primary.map, ctx.linkResolver)+"')" target='_blank')
       | map
      div.addeventatc(style='color: white !important;')
       | add to calender
