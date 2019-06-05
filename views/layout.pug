@@ -8,5 +8,12 @@ head
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
   script(src='/scripts/custom.js')
   script(src='https://addevent.com/libs/atc/1.6.1/atc.min.js' async defer)
+  // Global site tag (gtag.js) - Google Analytics
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-141535499-1')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-141535499-1');
 body
   block body
