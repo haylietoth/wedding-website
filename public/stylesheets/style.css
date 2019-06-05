@@ -435,35 +435,27 @@ img {
     .whitebar {
         height: 100px;
     }
-    .site-header {
-        padding: 5px 10px 20px 0px;
-    }
-    .site-header nav li {
-        margin-bottom: 8px;
-    }
     /*Header*/
 }
+
 @media screen and (min-width: 321px) and (max-width: 450px) { 
-    /*Header*/
-    .site-header {
-        padding: 5px 10px 20px 0px;
-    }
     .site-header a {
         font-size: 23px;
-    }
-    .site-header nav li {
-        margin-bottom: 8px;
     }
     .whitebar {
         height: 110px;
     }
+}
+@media screen and (max-width: 450px) { 
     /*Header*/
-    
-    /*Photos*/
-    img {
-        margin-top: 100px;
+    .site-header {
+        padding: 5px 10px 20px 0px;
     }
-    /*Photos*/   
+
+    .site-header nav li {
+        margin-bottom: 8px;
+    }
+    /*Header*/
 	
     /*Registry*/
     .registry p {
@@ -474,6 +466,9 @@ img {
     /*Travel*/
     .travel .desc, .travel .title {
         padding: 0px 0px;
+    }
+    .container .column, .column-d, .column-t {
+        margin: 0;
     }
     /*Travel*/
     
@@ -529,7 +524,7 @@ img {
     }
     
     .vertical-divider .column:first-child:after{
-        top: 105%;
+        top: 100%;
 	    content: " ";
 	    margin-left: 45%;
         position: absolute;
