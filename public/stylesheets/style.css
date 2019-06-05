@@ -153,7 +153,7 @@ img {
 }
 
 .signature div {
-    padding: 10px 40% 30px 40%;
+    padding: 10px 0 30px 0;
     text-align: center;
 }
 
@@ -203,30 +203,28 @@ img {
 	content: " ";
 	display: block;
 	visibility: hidden;
-    margin: 0px 75px;
+        margin: 0px 75px;
 }
 
 .vertical-divider .column:not(:first-child):after, .vertical-divider .column-d:not(:first-child):after, .vertical-divider .column-t:not(:first-child):after {
 	background: #2780d7;
 	bottom: -41px;
 	content: " ";
-	margin-left: -10px;
+	margin-left: 0px;
 	position: absolute;
 	top: 23px;
 	width: 3px;
 }
 
 .vertical-divider .column-d:first-child:after{
-	background: black;
-    top: 75px;
-	content: " ";
-	margin-left: 16px;
+        top: 75px;
+	margin-left: 26px;
 	position: absolute;
-    background-color: #2780d7;
-    border: none;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
+   	background-color: #2780d7;
+    	border: none;
+    	height: 25px;
+    	width: 25px;
+    	border-radius: 50%;
 }
 
 .container .column, .column-d, .column-t { 
@@ -555,6 +553,9 @@ img {
     .container .first.column-d h2 {
         font-size: 20px;
     }
+    .links a {
+        margin: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) { 
@@ -579,9 +580,6 @@ img {
     
     .row {
         padding: 0px;
-    }
-    .links a {
-        margin: 10px;
     }
 }
 
