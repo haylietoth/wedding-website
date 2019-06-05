@@ -1,11 +1,11 @@
 .registry
   != PrismicDOM.RichText.asHtml(slice.primary.statement, ctx.linkResolver)
 .links
-  a.r-links(href=PrismicDOM.RichText.asText(slice.primary.west_elm_link))
+  a.r-links(href=PrismicDOM.RichText.asText(slice.primary.west_elm_link, ctx.linkResolver) target='_blank')
    | west elm
   br
-  a.r-links(href=PrismicDOM.RichText.asText(slice.primary.zola_link, ctx.linkResolver))
+  a.r-links(href=PrismicDOM.RichText.asText(slice.primary.zola_link, ctx.linkResolver) target='_blank')
    | zola
   br
-  a.r-links(href=PrismicDOM.RichText.asText(slice.primary.ikea_link, ctx.linkResolver))
+  a.r-links(href=PrismicDOM.RichText.asText(slice.primary.ikea_link, ctx.linkResolver) target='_blank')
    |ikea
