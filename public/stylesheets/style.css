@@ -429,31 +429,36 @@ img {
 /* Media Queries */
 @media screen and (max-width: 320px) { 
     /*Header*/
-    .site-header nav li {
-        margin-left: 18px;
+    .site-header a {
+        font-size: 18px;
+    }
+    .whitebar {
+        height: 100px;
     }
     /*Header*/
 }
 @media screen and (max-width: 450px) { 
     /*Header*/
     .site-header {
-        padding: 5px 50px 20px 0px;
+        padding: 5px 10px 20px 0px;
     }
     .site-header a {
-        font-size: 20px;
+        font-size: 25px;
     }
     .site-header nav li {
         margin-bottom: 8px;
     }
     .whitebar {
-        height: 105px;
+        height: 110px;
     }
     /*Header*/
     
+    /*Photos*/
     img {
         margin-top: 100px;
     }
-    
+    /*Photos*/   
+	
     /*Registry*/
     .registry p {
         padding: 0;
@@ -466,7 +471,7 @@ img {
     }
     /*Travel*/
     
-    /*the day*/
+    /*The Day*/
     .container .first.column-d h3 {
         font-size: 25px;
         padding-left: 0px;
@@ -483,6 +488,7 @@ img {
 	width: 100px;
 	margin: 5px;
     }
+    /*The Day*/
 } 
 
 @media screen and (max-width: 767px) { 
@@ -543,16 +549,23 @@ img {
     }
     /*Columns*/
 	
-    /*photos*/
+    /*Photos*/
     .column-img {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
+    /*Photos*/
+	
+    /*Registry*/
+    .links a {
+        margin: 10px;
+    }
+    /*Registry*/
 } 
 
 @media screen and (min-width: 451px) and (max-width: 768px) { 
-/*The Day*/
+    /*The Day*/
     .container .first.column-d h3 {
         font-size: 20px;
         padding-left: 23px;
@@ -560,14 +573,19 @@ img {
     .container .first.column-d h2 {
         font-size: 20px;
     }
-    .links a {
-        margin: 10px;
+    /*The Day*/
+	
+    /*Photos*/
+    .column-img {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
+    /*Photos*/
 }
 
 @media screen and (max-width: 768px) { 
-/*The Day*/
-    
+   /*The Day*/
     h2 {
         line-height: 6.4vmin;
     } 
@@ -575,25 +593,17 @@ img {
     .container .first.column-d p {
         padding: 0% 9% 1% 9%;
     }
-    .container .one.column-t, .container .two.column-t {
-        margin: 0px;
-    }
-    
-    .column-img {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-    
+  
     .row {
         padding: 0px;
     }
+   /*The Day*/
 }
 
 @media screen and (min-width: 769px) and (max-width: 1025px) { 
     /*The Day*/
     .container .first.column-d p {
-        padding: 19% 12% 1% 12%;
+        padding: 0 12% 1% 12%;
     }
 
     h2 {
@@ -603,4 +613,5 @@ img {
     .container .first-column-d h2, .container .first-column-d h3, {
         margin: 0;
     }
+   /*The Day*/
 }
