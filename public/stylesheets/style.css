@@ -265,7 +265,7 @@ img {
 /*the day page*/
 .container .first.column-d { 
     width: 45%;
-    margin-top: -25px;
+    margin-top: -10px;
 }
 
 .container .second.column-d { 
@@ -275,7 +275,11 @@ img {
 
 .container .first.column-d .heading{ 
     clear: both;
-    margin: 0px 27% 0px 27%;
+    text-align: center;
+}
+
+.details {
+    display:inline-block;
 }
 
 .container .first.column-d h2{ 
@@ -286,12 +290,13 @@ img {
 .container .first.column-d h3{ 
     font-size: 25px;
     float: right;
+    padding-left: 30px;
 }
 
 .container .first.column-d p{ 
     font-size: 20px;
     text-align: center;
-    padding: 14% 12% 1% 12%;
+    padding: 0 12% 1% 12%;
 }
 
 .container .first.column-d img{ 
@@ -459,6 +464,15 @@ img {
         padding: 0px 0px;
     }
     /*Travel*/
+    
+    /*the day*/
+    .container .first.column-d h3 {
+        font-size: 25px;
+        padding-left: 0px;
+    }
+    .container .first.column-d h2 {
+        font-size: 25px;
+    }
 } 
 
 @media screen and (max-width: 767px) { 
@@ -520,18 +534,25 @@ img {
     /*Columns*/
 } 
 
+@media screen and (min-width: 451px) and (max-width: 768px) { 
+/*The Day*/
+    .container .first.column-d h3 {
+        font-size: 20px;
+        padding-left: 23px;
+    }
+    .container .first.column-d h2 {
+        font-size: 20px;
+    }
+
 @media screen and (max-width: 768px) { 
 /*The Day*/
-    .container .first.column-d .heading {
-        margin: 0px 7% 0px 7%;
-    } 
     
     h2 {
         line-height: 6.4vmin;
     } 
     
     .container .first.column-d p {
-        padding: 20% 9% 1% 9%;
+        padding: 0% 9% 1% 9%;
     }
     .container .one.column-t, .container .two.column-t {
         margin: 0px;
@@ -553,10 +574,6 @@ img {
 
 @media screen and (min-width: 769px) and (max-width: 1025px) { 
     /*The Day*/
-    .container .first.column-d .heading {
-        margin: 0px 18% 0px 18%;
-    }
-    
     .container .first.column-d p {
         padding: 19% 12% 1% 12%;
     }

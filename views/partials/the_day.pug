@@ -3,8 +3,9 @@
  .vertical-divider(style="padding-top: 75px;")
   .column-d.first
    .heading
-    != PrismicDOM.RichText.asHtml(slice.primary.event, ctx.linkResolver)
-    != PrismicDOM.RichText.asHtml(slice.primary.time, ctx.linkResolver)
+    .details
+     != PrismicDOM.RichText.asHtml(slice.primary.event, ctx.linkResolver)
+     != PrismicDOM.RichText.asHtml(slice.primary.time, ctx.linkResolver)
    != PrismicDOM.RichText.asHtml(slice.primary.description, ctx.linkResolver)
    img(src=slice.primary.image.url)
   .column-d.second
