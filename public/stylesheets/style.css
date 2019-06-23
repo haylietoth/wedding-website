@@ -179,6 +179,14 @@ img {
     padding: 0px 15%;
 }
 
+.travel .desc a {
+    color: #2780d7;
+}
+
+.travel .desc a:hover {
+    text-decoration: none;
+}
+
 .container .one.column-t { 
     width: 45%; 
 }
